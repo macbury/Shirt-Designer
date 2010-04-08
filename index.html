@@ -1,0 +1,58 @@
+<!doctype html>
+   
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Shirt Designer</title>
+	<link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
+	<link rel="stylesheet" href="stylesheets/jquery-ui.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<script src="javascripts/brushes.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/application.js" type="text/javascript" charset="utf-8"></script>
+	
+</head>
+<body id="editor">
+	<div class="container">
+		<div id="shirt">
+			<div></div>
+		</div>
+	</div>
+	<nav>
+		<form>
+			<div id="inspector">
+				<h3><a href="#">Krok 1: Kolor koszulki</a></h3>
+				<div>
+					<p>Dostępne kolory:</p>
+					<input type="hidden" name="shirt[color]" value="black" id="shirt_color" />
+					<div class="colors" input="shirt_color" id="select_shirt_color">
+						<div val="black" class="item selected"><div style="background: #000"></div></div>
+						<div val="white" class="item"><div style="background: #FFF"></div></div>
+						<div val="blue" class="item"><div style="background: #00F"></div></div>
+					</div>
+				</div>
+				<h3><a href="#">Krok 2: Wybierz wzory</a></h3>
+				<div>
+					<p>Przeciągnij i upuść wzór na koszulkę. Następnie przesuń w wybrane miejsce</p>
+					<div id="brushes"></div>
+				</div>
+				<h3><a href="#">Krok 3: Zapisz</a></h3>
+				<div>
+					<p>
+					Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+					Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+					ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+					lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+					</p>
+					<ul>
+						<li>List item one</li>
+						<li>List item two</li>
+						<li>List item three</li>
+					</ul>
+				</div>
+			</div>
+		</form>
+	</nav>
+</body>
+</html>

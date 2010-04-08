@@ -1,0 +1,126 @@
+body { 
+	background-color: #FFF;
+	color: #333;
+	font-family: Verdana, Helvetica, Arial;
+	font-size: 12px;
+}
+	
+a { color: #1B97F2; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+a img { border: none; }
+h1, h2, h3, h4, h5 { text-align: center; }
+h1 { font-size: 24px; }
+h2, h2 a {
+	color: #E98C08;
+	font-size: 18px;
+}
+
+h3 {
+	color: #666;
+	font-size: 14px;
+}
+
+h4 {
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+label { font-size: 12px; }
+label.required { font-weight: bold; }
+ul { margin: 4px 0; padding-left: 17px; }
+
+/*
+	container
+*/
+
+.container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 280px;
+	padding: 20px;
+	overflow-y: scroll;
+}
+
+#shirt {
+	background: #fff url('../images/shirts_base/black.jpg') no-repeat;
+	width: 300px;
+	height: 370px;
+	margin: 0 auto;
+	padding: 120px 155px 80px 145px;
+	overflow: hidden;
+}
+
+#shirt canvas {
+	position: absolute;
+	z-index: 2;
+}
+
+#shirt div {
+	width: 300px;
+	height: 370px;
+}
+
+#shirt div.over {
+	border: 1px solid #eee;
+}
+
+/*
+	inspector
+*/
+
+nav {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 280px;
+	overflow-y: auto;
+}
+
+nav > form { margin: 10px !important; }
+
+.colors { clear: both; }
+.colors > .item {
+	width: 24px;
+	height: 24px;
+	padding: 1px;
+	border: 1px solid #333;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.colors > .selected {
+	border-style: dotted !important;
+}
+
+.colors > .item > div {
+	width: 24px;
+	height: 24px;
+}
+/*
+	brushes
+*/
+#brushes {
+	clear: both; 
+}
+
+#brushes > div {
+	width: 48px;
+	height: 48px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border: 1px solid #ddd;
+	background: #fff url('../images/brush-loader.gif') no-repeat center center;
+	cursor: move;
+	float: left;
+	overflow: hidden;
+}
+
+#brushes > div > img {
+	width: 48px;
+	min-height: 48px;
+}
